@@ -15,7 +15,6 @@ global.debug =  (process.env.DEBUG_MODE == 'true') || false;
 
 //Include the Environment JS
 require('./config/environment.js')(app, express);
-//      Routes for ICE-M Service
 //Routes for CORS Support
 require('./config/routes/route_cors')(app);
 //Routes for Resources
@@ -32,9 +31,7 @@ app.listen(processport);
 //Print out the port on startup
 console.log("Port for node.js process: " + processport);
 //app.listen(33846);
-console.log('DEX Address: ' + prd.address);
-console.log('KB Address: ' + prd.kb);
-console.log('EB Address: ' + prd.eb);
-console.log('SB Address: ' + prd.sb);
+console.log('Address: ' + prd.address);
+
 //Get the address for the Application
 //console.log('APP Address: ' + app.address());
